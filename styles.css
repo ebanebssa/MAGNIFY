@@ -1,0 +1,241 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.bkg-img
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("marine bkg.jpg");
+    background-size: cover;
+    background-attachment: fixed;  /*paralax hmm*/
+    background-position: center;
+    filter: blur(3px);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+}
+
+body
+{
+    /* background-image: url("https://www.planetdiveholidays.com/blog/wp-content/uploads/sites/3/2012/02/Red-Sea-underwater-640x463.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; */
+    background-color: lightblue; /*rgb(173, 216, 230)*/
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    color: white;
+    text-align: center;
+}
+/*********************************************************/
+.menu-bar
+{
+    background: white;
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: flex;
+    list-style: none;
+    color: black;
+}
+.menu-bar ul li
+{
+    /* width: 120px;
+    margin: 5px;*/
+    flex: 1;
+}
+.menu-bar ul li a
+{
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.active, .menu-bar ul li a:hover
+{
+    background: lightblue;
+    border-radius: 3px;
+}
+
+.submenu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .submenu-1
+{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.menu-bar ul li:hover .submenu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .submenu-1 ul li
+{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted lightblue;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .submenu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .submenu-1 ul li a:hover
+{
+    color: deepskyblue;
+}
+/*********************************************************/
+
+.logo
+{
+    font-size: 75px;
+    margin-top: 75px;
+    font-family: "Sigmar One", cursive;
+}
+
+h1
+{
+    font-size: 60px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+p
+{
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 60px;
+}
+
+/*********************************************************/
+ul
+{
+    list-style: circle;
+}
+
+ul li
+{
+    margin-bottom: 10px;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*********************************************************/
+
+.slide-container
+{
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-container
+{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    transition: left 3s;
+}
+
+.slider-img
+{
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.button-container
+{
+    top: -20px;
+    position: relative;
+}
+
+.slider-button
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#slider-img-1:target ~ .img-container
+{
+    left: 0px;
+}
+
+#slider-img-2:target ~ .img-container
+{
+    left: -800px;
+}
+
+#slider-img-3:target ~ .img-container
+{
+    left: -1600px;
+}
+
+
+/* .slider
+{
+    overflow: hidden;
+}
+
+.slider figure[]
+{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: slider 5s infinite;
+}
+
+.slider figure img
+{
+    width: 33%;
+    float: left;
+} */
+
+/*********************************************************/
+/* div[style*="z-index: 9999999"]
+{
+    display: none;
+} */
+/* @media only screen and (max-width: 400px)
+{
+    body
+    {
+        background-color: black;
+    }
+} */
+
